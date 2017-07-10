@@ -1,0 +1,24 @@
+2017-07-10 01:17:53,352 | CANT CONNECT VK[100] One of the parameters specified was missing or invalid: message is empty or invalid
+2017-07-10 01:18:39,832 | CANT CONNECT VK[100] One of the parameters specified was missing or invalid: message is empty or invalid
+2017-07-10 14:59:45,696 | CANT CONNECT VKappend() takes exactly one argument (3 given)
+2017-07-10 15:13:08,737 | CANT CONNECT VK[100] One of the parameters specified was missing or invalid: message is empty or invalid
+2017-07-10 15:13:11,902 | CANT CONNECT VK[100] One of the parameters specified was missing or invalid: message is empty or invalid
+2017-07-10 15:13:24,540 | CANT CONNECT VKcan only join an iterable
+2017-07-10 15:26:58,150 | CANT CONNECT VKlist index out of range
+2017-07-10 15:37:35,365 | CANT CONNECT VKcatch_kat() takes 0 positional arguments but 1 was given
+2017-07-10 16:03:45,541 | CANT CONNECT VKcatch_kat() takes 0 positional arguments but 1 was given
+2017-07-10 17:11:51,247 | CANT CONNECT VKwelcome() takes 1 positional argument but 3 were given
+2017-07-10 17:12:25,099 | CANT CONNECT VKwelcome() takes 1 positional argument but 3 were given
+2017-07-10 17:13:12,697 | CANT CONNECT VKwelcome() takes 1 positional argument but 3 were given
+2017-07-10 17:16:58,354 | CANT CONNECT VKget_answer() got an unexpected keyword argument 'key'
+2017-07-10 17:17:45,053 | CANT CONNECT VKname 'key' is not defined
+2017-07-10 17:33:53,643 | CANT CONNECT VK'dict_values' object does not support indexing
+2017-07-10 17:34:05,632 | CANT CONNECT VK'dict_values' object does not support indexing
+2017-07-10 17:34:13,679 | CANT CONNECT VK'dict_values' object does not support indexing
+2017-07-10 17:37:35,173 | CANT CONNECT VKunsupported operand type(s) for +: 'dict_values' and 'str'
+2017-07-10 17:40:14,579 | CANT CONNECT VK'dict_values' object does not support indexing
+2017-07-10 17:42:56,648 | CANT CONNECT VKwelcome() takes 0 positional arguments but 1 was given
+2017-07-10 17:43:05,707 | CANT CONNECT VKwelcome() takes 0 positional arguments but 1 was given
+2017-07-10 17:43:56,071 | CANT CONNECT VKwelcome() takes 0 positional arguments but 1 was given
+2017-07-10 17:45:57,939 | CANT CONNECT VKlist_us() got an unexpected keyword argument 'key'
+2017-07-10 17:47:07,415 | CANT CONNECT VKlist_us() got an unexpected keyword argument 'key'
