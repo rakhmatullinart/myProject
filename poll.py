@@ -10,7 +10,6 @@ logfile = 'logs.log'  # 'logs.log', for example
 logging.basicConfig(format=u'%(asctime)s | %(message)s',
                     level=logging.WARNING, filename=logfile)  # edit log's filename if needed
 
-
 while True:
     try:
         vk_session = vk_api.VkApi(token=const.token)
@@ -25,16 +24,26 @@ while True:
         longpoll = VkLongPoll(vk_session)
         vk = vk_session.get_api()
 
+
         for event in longpoll.listen():
 
             if event.type == VkEventType.MESSAGE_NEW:
                 if event.to_me:
-                    try:
-                        text= get_answer(key=event.text, kat=const.userInfo[0], step = const.process_user_step)
-                        vk.messages.send(user_id=event.user_id, message=text)
+                        try:
+                            if event.user_id not in const.users_steps:
+                                const.users_steps[event.user_id] = ['kat_choose', '', '', '']
+                                const.users_callback[event.user_id] = {}
+                            text= get_answer(key=event.text.lower(), kat=const.users_steps[event.user_id][1], step = const.users_steps[event.user_id][0], user_id = event.user_id)
+                            attach = None
+                            if text[-1] == '&':
+                                attach = text[-26:-1]
+                                text = text[:-26]
 
-                    except Exception as e:
-                        logging.log(logging.ERROR, 'CANT CONNECT VK' + str(e))
+                            vk.messages.send(user_id=event.user_id, message=text, attachment = attach)
+
+
+                        except Exception as e:
+                            logging.log(logging.ERROR, 'CANT CONNECT VK ' + str(e))
 
     except KeyboardInterrupt:
         exit()

@@ -13,7 +13,7 @@ class Command:
    @keys.setter
    def keys(self, mas):
        for k in mas:
-           self.__keys.append(k)
+           self.__keys.append(k.lower())
 
    def process(self):
        pass

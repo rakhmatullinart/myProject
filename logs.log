@@ -22,3 +22,35 @@
 2017-07-10 17:43:56,071 | CANT CONNECT VKwelcome() takes 0 positional arguments but 1 was given
 2017-07-10 17:45:57,939 | CANT CONNECT VKlist_us() got an unexpected keyword argument 'key'
 2017-07-10 17:47:07,415 | CANT CONNECT VKlist_us() got an unexpected keyword argument 'key'
+2017-07-11 15:00:36,160 | CANT CONNECT VKlocal variable 'data' referenced before assignment
+2017-07-11 15:01:02,128 | CANT CONNECT VKlocal variable 'data' referenced before assignment
+2017-07-11 15:02:19,311 | CANT CONNECT VKlocal variable 'data' referenced before assignment
+2017-07-11 15:07:50,322 | CANT CONNECT VKlocal variable 'data' referenced before assignment
+2017-07-12 12:20:01,221 | CANT CONNECT VK[100] One of the parameters specified was missing or invalid: message is empty or invalid
+2017-07-12 12:22:55,963 | CANT CONNECT VKshow_all() got an unexpected keyword argument 'key'
+2017-07-12 12:30:57,716 | CANT CONNECT VK[100] One of the parameters specified was missing or invalid: message is empty or invalid
+2017-07-12 12:33:19,435 | CANT CONNECT VK'Command' object is not callable
+2017-07-12 12:37:01,980 | CANT CONNECT VK'Command' object is not callable
+2017-07-12 12:38:02,347 | CANT CONNECT VK'Command' object is not callable
+2017-07-12 12:40:34,074 | CANT CONNECT VK'Command' object is not callable
+2017-07-12 12:46:41,881 | CANT CONNECT VK 'Command' object is not callable
+2017-07-12 12:48:17,094 | CANT CONNECT VK 'Command' object is not callable
+2017-07-12 13:17:33,360 | CANT CONNECT VK 'Категория 1'
+2017-07-12 13:18:32,607 | CANT CONNECT VK 'Категория 1'
+2017-07-12 13:20:25,927 | CANT CONNECT VK 'Категория 1'
+2017-07-12 13:21:05,873 | CANT CONNECT VK 'Категория 1'
+2017-07-12 13:21:55,629 | CANT CONNECT VK 'Категория 1'
+2017-07-12 13:22:27,949 | CANT CONNECT VK 'Категория 1'
+2017-07-12 13:22:41,753 | CANT CONNECT VK 'Категория 1'
+2017-07-12 13:23:05,474 | CANT CONNECT VK 'Категория 1'
+2017-07-12 14:04:00,886 | CANT CONNECT VK name 'photo' is not defined
+2017-07-12 14:04:17,024 | CANT CONNECT VK name 'photo' is not defined
+2017-07-12 14:05:09,666 | CANT CONNECT VK name 'photo' is not defined
+2017-07-12 22:27:46,941 | CANT CONNECT VK list assignment index out of range
+2017-07-12 22:28:28,276 | CANT CONNECT VK list assignment index out of range
+2017-07-13 12:47:32,532 | CANT CONNECT VK sequence item 1: expected str instance, NoneType found
+2017-07-13 12:49:45,193 | CANT CONNECT VK Can't convert 'NoneType' object to str implicitly
+2017-07-13 12:49:52,997 | CANT CONNECT VK Can't convert 'NoneType' object to str implicitly
+2017-07-13 12:51:52,029 | CANT CONNECT VK Can't convert 'NoneType' object to str implicitly
+2017-07-13 12:52:39,144 | CANT CONNECT VK Can't convert 'NoneType' object to str implicitly
+2017-07-13 12:57:22,834 | CANT CONNECT VK sequence item 1: expected str instance, NoneType found
