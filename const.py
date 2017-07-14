@@ -14,9 +14,10 @@ nameForEdit = ''
 editOrAdd = ''
 process_user_step = ''
 #defaultPhoto = open('default.png')
-
+flag_break = False
 users_callback = {}
 users_steps = {}
+user_ids = []
 
 '''структура словаря users_steps
 ключом является id пользователя

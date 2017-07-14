@@ -11,12 +11,12 @@ def get_answer(**kwargs):
         data = text[1:]
         text = text[0]
     for com in command_list:
-
         if text in com.keys:
-            msg = com.process(key = text, step = kwargs.get('step'), kat = kwargs.get('kat'),
-                                  user_id = kwargs.get('user_id'), data = data)
-
+            msg = com.process(key = text.lower(), obj = kwargs.get('obj'), data = data)
             message = msg if msg else message
+        if const.flag_break:
+            const.flag_break = False
+            break
     return message
 
 

@@ -54,3 +54,20 @@
 2017-07-13 12:51:52,029 | CANT CONNECT VK Can't convert 'NoneType' object to str implicitly
 2017-07-13 12:52:39,144 | CANT CONNECT VK Can't convert 'NoneType' object to str implicitly
 2017-07-13 12:57:22,834 | CANT CONNECT VK sequence item 1: expected str instance, NoneType found
+2017-07-13 17:43:07,811 | CANT CONNECT VK 'New'
+2017-07-13 17:43:35,482 | CANT CONNECT VK 'New'
+2017-07-13 17:45:07,635 | CANT CONNECT VK 'NoneType' object is not subscriptable
+2017-07-13 17:46:13,627 | CANT CONNECT VK 'NoneType' object is not subscriptable
+2017-07-13 17:46:25,968 | CANT CONNECT VK 'NoneType' object is not subscriptable
+2017-07-13 17:46:48,078 | CANT CONNECT VK 'NoneType' object is not subscriptable
+2017-07-13 17:48:34,155 | CANT CONNECT VK 'New'
+2017-07-13 17:51:32,738 | CANT CONNECT VK 'New'
+2017-07-13 17:55:57,179 | CANT CONNECT VK 'NoneType' object is not iterable
+2017-07-13 17:57:13,547 | CANT CONNECT VK 'NoneType' object is not iterable
+2017-07-13 17:59:11,327 | CANT CONNECT VK 'NoneType' object is not iterable
+2017-07-13 18:00:10,085 | CANT CONNECT VK 'NoneType' object is not iterable
+2017-07-13 18:01:51,360 | CANT CONNECT VK 'NoneType' object is not iterable
+2017-07-13 18:02:41,819 | CANT CONNECT VK 'NoneType' object is not iterable
+2017-07-14 12:12:36,938 | CANT CONNECT VK 368801835
+2017-07-14 12:25:20,653 - base.py - ERROR - database is locked
+2017-07-14 12:25:20,653 | database is locked

@@ -135,7 +135,7 @@ def add_kat(kat):
     db = sqlite.connect(const.dbPath)
     cur = db.cursor()
     try:
-        cur.execute('SELECT * FROM categories WHERE name = (?)', (kat,))
+        cur.execute('SELECT * FROM categories WHERE name = (?)', (kat.lower(),))
     except Exception as e:
         logger.error('CANT CONNECT DATABASE: ' + str(e))
     if not cur.fetchone():

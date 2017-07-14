@@ -5,10 +5,13 @@ import const
 from message_handler import get_answer
 from command_System import command_list
 from commands import *
+from info import Choice
+from info import objects
 
 logfile = 'logs.log'  # 'logs.log', for example
 logging.basicConfig(format=u'%(asctime)s | %(message)s',
                     level=logging.WARNING, filename=logfile)  # edit log's filename if needed
+
 
 while True:
     try:
@@ -29,11 +32,17 @@ while True:
 
             if event.type == VkEventType.MESSAGE_NEW:
                 if event.to_me:
-                        try:
-                            if event.user_id not in const.users_steps:
-                                const.users_steps[event.user_id] = ['kat_choose', '', '', '']
-                                const.users_callback[event.user_id] = {}
-                            text= get_answer(key=event.text.lower(), kat=const.users_steps[event.user_id][1], step = const.users_steps[event.user_id][0], user_id = event.user_id)
+                        #try:
+                            if event.user_id not in const.user_ids:
+                                const.user_ids.append(event.user_id)
+                                inf = Choice(event.user_id)
+                            else:
+                                for i in objects:
+                                    if i.user_id == event.user_id:
+                                        inf = i
+                                        break
+                            text= get_answer(key=event.text, obj = inf)
+
                             attach = None
                             if text[-1] == '&':
                                 attach = text[-26:-1]
@@ -42,8 +51,8 @@ while True:
                             vk.messages.send(user_id=event.user_id, message=text, attachment = attach)
 
 
-                        except Exception as e:
-                            logging.log(logging.ERROR, 'CANT CONNECT VK ' + str(e))
+                         #except Exception as e:
+                          #  logging.log(logging.ERROR, 'CANT CONNECT VK ' + str(e))
 
     except KeyboardInterrupt:
         exit()

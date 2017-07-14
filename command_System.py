@@ -17,3 +17,10 @@ class Command:
 
    def process(self):
        pass
+
+   def keys_remove(self, mas):
+       for i in mas:
+           try:
+               self.__keys.pop(i)
+           except:
+               pass
