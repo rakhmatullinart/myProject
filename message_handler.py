@@ -21,11 +21,11 @@ def get_answer(**kwargs):
         if text[0] in ['#', '?', '$']:
             data = text[1:]
             text = text[0]
-        elif text[:6] == 'vk.com':
+        elif text[:6] in ['https:', 'vk.com']:
             data = text
             text = 'vk.com'
         for com in command_list:
-            if text in com.keys:
+            if text.lower() in com.keys:
                 msg = com.process(key = text.lower(), obj = kwargs.get('obj'), data = data)
                 message = msg if msg else message
             if const.flag_break:

@@ -98,7 +98,9 @@ def list_us(**kwargs):
     if obj.step == 'confirm_name':
         msg = 'Список пользователей:\n'
         data = kwargs.get('data')
+
         if data:
+            data = data[data.find('vk.com'):]
             q = base.getUsers(data, obj.kat)
         else:
             q = base.getUsers(make_upper(kwargs.get('key')), obj.kat)

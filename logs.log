@@ -82,3 +82,5 @@
 2017-07-16 12:53:28,251 - base.py - ERROR - USER ADDING ERROR
 2017-07-16 12:53:28,251 | USER ADDING ERROR
 2017-07-16 18:22:38,486 | CANT CONNECT VK 'NoneType' object is not subscriptable
+2017-07-16 23:30:02,393 | CANT CONNECT VK set_full_data() argument after * must be an iterable, not NoneType
+2017-07-16 23:51:16,243 | CANT CONNECT VK 'NoneType' object has no attribute 'find'
