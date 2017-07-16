@@ -6,6 +6,7 @@ class User:
     name = None
     surname = None
     kat = None
+    link = None
     #data_types = ['id', 'type', 'name', 'company', 'price', 'description', 'url']
     def get_data(self):  # возвращает список , состоящий из структуры данных типа Item.data_types
         args = (self.name,
@@ -20,6 +21,7 @@ class User:
             self.surname = args[2]
             self.id = args[0]
             self.rate = args[4]
+            self.link = args[5]
 
         except:
             pass

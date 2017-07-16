@@ -1,11 +1,13 @@
 command_list = []
-
+command_list_admin = []
 class Command:
-   def __init__(self):
+   def __init__(self, add = False):
        self.__keys = []
        self.description = ''
-       command_list.append(self)
-
+       if add:
+           command_list_admin.append(self)
+       else:
+           command_list.append(self)
    @property
    def keys(self):
        return self.__keys
@@ -21,6 +23,6 @@ class Command:
    def keys_remove(self, mas):
        for i in mas:
            try:
-               self.__keys.pop(i)
+               self.__keys.remove(i)
            except:
                pass

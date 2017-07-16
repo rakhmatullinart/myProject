@@ -10,4 +10,6 @@ class Choice:
         self.callback = {}
         self.user_id = user_id
         self.editor = is_editor(user_id)
+        self.edit = None
+        self.queue = []
         objects.append(self)

@@ -37,13 +37,12 @@ def getUsers(name, kat):
     tempNames = cur.fetchall()
     if not tempNames:
         cur.execute(
-            'SELECT ("firstName" || " " || "lastName") FROM Users WHERE ("lastName" || " " || "category") = (?)',
+            'SELECT ("firstName" || " " || "lastName") FROM Users WHERE ("link" || " " || "category") = (?)',
             (data,))
         tempNames = cur.fetchall()
-    names = {}
+    names = []
     for i in tempNames:
-        nam, surname = i[0].lower().split()
-        names[nam] = surname
+        names.append(i[0])
     return names
 
 
@@ -130,6 +129,31 @@ def delete_kat(kat):
     cur.execute("DELETE FROM categories WHERE name = ?", (kat,))
     db.commit()
 
+def addUser(user):
+    db = sqlite.connect(const.dbPath)
+    cur = db.cursor()
+    name = user.name +' '+ user.surname
+    try:
+        cur.execute('SELECT * FROM Users WHERE ("firstName" || " " || "lastName") = (?)', (name,))
+    except Exception as e:
+        logger.error('DBTESTING ERROR: ' + str(e))
+    if not cur.fetchone():
+        try:
+            cur.execute('INSERT INTO Users (firstName, lastName, category, rate, link) VALUES (?,?,?,?,?)', (
+                user.name,
+                user.surname,
+                user.kat,
+                user.rate,
+                user.link))
+
+            db.commit()
+
+
+        except Exception as e:
+            logger.error('USER ADDING ERROR' + str(e))
+    else:
+        logger.warning('IN THE BASE YET\n'+
+                   user.name + " " + user.surname)
 
 def add_kat(kat):
     db = sqlite.connect(const.dbPath)
