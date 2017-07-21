@@ -84,3 +84,24 @@
 2017-07-16 18:22:38,486 | CANT CONNECT VK 'NoneType' object is not subscriptable
 2017-07-16 23:30:02,393 | CANT CONNECT VK set_full_data() argument after * must be an iterable, not NoneType
 2017-07-16 23:51:16,243 | CANT CONNECT VK 'NoneType' object has no attribute 'find'
+2017-07-17 13:35:51,028 | CANT CONNECT VK 'NoneType' object has no attribute 'step'
+2017-07-17 13:41:54,197 | CANT CONNECT VK 'NoneType' object is not subscriptable
+2017-07-17 15:23:19,052 | CANT CONNECT VK [100] One of the parameters specified was missing or invalid: message is empty or invalid
+2017-07-17 15:25:59,540 | CANT CONNECT VK [100] One of the parameters specified was missing or invalid: message is empty or invalid
+2017-07-17 15:31:22,800 | CANT CONNECT VK int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2017-07-18 12:03:49,581 | CANT CONNECT VK 'NoneType' object is not subscriptable
+2017-07-19 15:08:51,503 | CANT CONNECT VK 'NoneType' object has no attribute 'callback'
+2017-07-20 12:43:23,022 - base.py - ERROR - USER ADDING ERROR'User' object has no attribute 'rate'
+2017-07-20 12:43:23,022 | USER ADDING ERROR'User' object has no attribute 'rate'
+2017-07-20 12:47:14,010 - base.py - ERROR - USER ADDING ERROR'User' object has no attribute 'rate'
+2017-07-20 12:47:14,010 | USER ADDING ERROR'User' object has no attribute 'rate'
+2017-07-21 00:05:07,046 - base.py - ERROR - USER ADDING ERROR'User' object has no attribute 'rate'
+2017-07-21 00:05:07,046 | USER ADDING ERROR'User' object has no attribute 'rate'
+2017-07-21 00:06:51,731 - base.py - ERROR - USER ADDING ERROR'User' object has no attribute 'rate'
+2017-07-21 00:06:51,731 | USER ADDING ERROR'User' object has no attribute 'rate'
+2017-07-21 00:12:02,332 - base.py - ERROR - USER ADDING ERROR'User' object has no attribute 'rate'
+2017-07-21 00:12:02,332 | USER ADDING ERROR'User' object has no attribute 'rate'
+2017-07-21 00:12:06,816 - base.py - ERROR - USER ADDING ERROR'User' object has no attribute 'rate'
+2017-07-21 00:12:06,816 | USER ADDING ERROR'User' object has no attribute 'rate'
+2017-07-21 14:53:13,721 - base.py - ERROR - USER ADDING ERRORdatabase is locked
+2017-07-21 14:53:13,721 | USER ADDING ERRORdatabase is locked

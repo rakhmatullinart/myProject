@@ -1,13 +1,10 @@
 command_list = []
 command_list_admin = []
 class Command:
-   def __init__(self, add = False):
+   def __init__(self):
        self.__keys = []
        self.description = ''
-       if add:
-           command_list_admin.append(self)
-       else:
-           command_list.append(self)
+       command_list.append(self)
    @property
    def keys(self):
        return self.__keys

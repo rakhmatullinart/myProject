@@ -32,6 +32,7 @@ def is_editor(user_id):
 def getUsers(name, kat):
     db = sqlite.connect(const.dbPath)
     cur = db.cursor()
+
     data = name + ' ' + kat
     cur.execute('SELECT ("firstName" || " " || "lastName") FROM Users WHERE ("firstName" || " " || "category") = (?)', (data,))
     tempNames = cur.fetchall()
@@ -92,6 +93,12 @@ def get_users():
         users[name] = surname
     return users
 
+def get_user_link(name):
+    db = sqlite.connect(const.dbPath)
+    cur = db.cursor()
+    cur.execute('SELECT link FROM Users WHERE ("firstName" || " " || "lastName") = (?)', (name,))
+    c = cur.fetchone()
+    return c[0]
 
 def giveUsers():
     inf = {}
@@ -132,18 +139,19 @@ def delete_kat(kat):
 def addUser(user):
     db = sqlite.connect(const.dbPath)
     cur = db.cursor()
-    name = user.name +' '+ user.surname
+    name = user.name.lower() +' '+ user.surname.lower()
     try:
         cur.execute('SELECT * FROM Users WHERE ("firstName" || " " || "lastName") = (?)', (name,))
     except Exception as e:
         logger.error('DBTESTING ERROR: ' + str(e))
     if not cur.fetchone():
         try:
-            cur.execute('INSERT INTO Users (firstName, lastName, category, rate, link) VALUES (?,?,?,?,?)', (
-                user.name,
-                user.surname,
+            cur.execute('INSERT INTO Users (firstName, lastName, category, status, reason, link) VALUES (?,?,?,?,?,?)', (
+                user.name.lower(),
+                user.surname.lower(),
                 user.kat,
-                user.rate,
+                user.stat,
+                user.reason,
                 user.link))
 
             db.commit()
